@@ -586,6 +586,7 @@ header nav .gnb li a:hover{
     color:#fff;
     border:1px solid #f4f4f4;
     padding:2px 6px 6px;
+    transition: all 1s;
 }
 
 .fineimg .reserv p a:hover{
@@ -603,6 +604,7 @@ header nav .gnb li a:hover{
     color:#fff;
     border:1px solid #f4f4f4;
     padding:2px 6px 6px;
+    transition: all 1s;
 }
 
 .eventimg .ex > p:last-child a:hover{
@@ -930,6 +932,46 @@ footer .wrap > div .faq a{
     border: 2px solid #c0b6b2;
     padding:2px 30px;
 }
+
+/* footer .wrap > div .faq a:hover{
+    background-color: #c0b6b2;
+    color:#fff;
+} */
+
+footer .wrap > div .faq a,
+footer .wrap > div .faq a::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 1s;
+}
+
+footer .wrap > div .faq a::before,
+footer .wrap > div .faq a::after {
+    background-color: #c0b6b2;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+footer .wrap > div .faq a:hover {
+    background-color: #c0b6b2;
+    border: none;
+    color:#fff;
+}
+
+footer .wrap > div .faq a::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+
+footer .wrap > div .faq a:hover:after {
+    width: 100%;
+}
+
+
 
 footer .wrap .tel{
     font-size:20px;

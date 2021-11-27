@@ -48,13 +48,11 @@ $(document).ready(function () {
     if(scr >= hanockStart) { 
       $(".hanock").addClass("on")
     } 
-
-
-  var guideFixStart = $(".guidefix").offset().top;
-  var imgHeight = $(".guide .guidefix img").height();
-  var guideFixEnd = $(".guide .explain .wrap > p").offset().top
-  var guideFixEndPos = $(".guide .explain .wrap > p").position().top;
-  
+    var weddingFixStart = $(".event").offset().top;
+    var guideFixStart = $(".guidefix").offset().top;
+    var imgHeight = $(".guide .guidefix img").height();
+    var guideFixEnd = $(".guide .explain .wrap > p").offset().top
+    var guideFixEndPos = $(".guide .explain .wrap > p").position().top;
 
     if(scr >= guideFixStart && scr < guideFixEnd - imgHeight){
       $(".guidefix img").css({
